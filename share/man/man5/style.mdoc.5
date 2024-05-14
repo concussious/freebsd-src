@@ -240,15 +240,6 @@ macro is usually not necessary.
 .Ss Variables
 .Bl -dash -width ""
 .It
-Use
-.Sy \&Va
-instead of
-.Sy \&Dv
-for
-.Xr sysctl 8
-variables like
-.Va kdb.enter.panic .
-.It
 Use the angle brackets
 .Sy \&Aq
 .Pq Dq "<>"
@@ -278,6 +269,20 @@ that would be rendered as:
 .Bd -filled -offset indent
 .Va critical_filesystems_ Ns Ar type
 .Ed
+.It
+Use
+.Sy \&Dv
+for standard streams like
+.Xr stdout 4 .
+.It
+Use
+.Sy \&Va
+instead of
+.Sy \&Dv
+for
+.Xr sysctl 8
+variables like
+.Va kdb.enter.panic .
 .El
 .Sh SEE ALSO
 .Xr man 1 ,
