@@ -152,6 +152,13 @@ cd src/bin/ls
 make clean all install
 .Ed
 .Pp
+Rebuild and reinstall a single piece of the kernel, in this case
+.Xr sound 4 :
+.Bd -literal -offset indent
+cd src/sys/modules/sound
+make all install clean cleandepend KMODDIR=/boot/kernel
+.Ed
+.Pp
 Quickly rebuild and reinstall the kernel, only recompiling the files
 changed since last build; note that this will only work if the full kernel
 build has been completed in the past, not on a fresh source tree:
