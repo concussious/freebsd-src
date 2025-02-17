@@ -26,7 +26,7 @@ Source Roadmap:
 | contrib | Packages contributed by 3rd parties. |
 | crypto | Cryptography stuff (see [crypto/README](crypto/README)). |
 | etc | Template files for /etc. |
-| gnu | Commands and libraries under the GNU General Public License (GPL) or Lesser General Public License (LGPL). Please see [gnu/COPYING](gnu/COPYING) and [gnu/COPYING.LIB](gnu/COPYING.LIB) for more information. |
+| gnu | Commands and libraries under the GNU General Public License (GPL) or Lesser General Public License (LGPL), see [gnu/COPYING](gnu/COPYING) and [gnu/COPYING.LIB](gnu/COPYING.LIB). |
 | include | System include files. |
 | kerberos5 | Kerberos5 (Heimdal) package. |
 | lib | System libraries. |
@@ -37,9 +37,9 @@ Source Roadmap:
 | secure | Cryptographic libraries and commands. |
 | share | Shared resources. |
 | stand | Boot loader sources. |
-| sys | Kernel sources (see [sys/README.md](sys/README.md)). |
+| sys | Kernel sources, see [sys/README.md](sys/README.md). |
 | targets | Support for experimental `DIRDEPS_BUILD` |
-| tests | Regression tests which can be run by Kyua.  See [tests/README](tests/README) for additional information. |
+| tests | Regression tests which can be run by Kyua, see [tests/README](tests/README). |
 | tools | Utilities for regression testing and miscellaneous tasks. |
 | usr.bin | User commands. |
 | usr.sbin | System administration commands. |
