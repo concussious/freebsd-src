@@ -1,18 +1,18 @@
-.\"-
+.\"
 .\" SPDX-License-Identifier: BSD-2-Clause
 .\"
-.\" Copyright (c) 2024 Alexander Ziaee. Ohio.
+.\" Copyright (c) 2024-2025 Alexander Ziaee. Ohio.
 .\"
-.Dd April 17, 2024
-.Dt "NETWORKING" 7
+.Dd February 21, 2025
+.Dt NETWORKING 7
 .Os
 .Sh NAME
 .Nm networking ,
 .Nm wifi
 .Nd quickstart guide to connecting to a network
 .Sh DESCRIPTION
-In the following examples, it is assumed that we are connecting to Ethernet
-with the first interface found by the
+In the following examples, it is assumed that
+we are connecting to Ethernet with the first interface found by the
 .Xr em 4
 driver, and Wi-Fi with the first interface found by the
 .Xr iwn 4
@@ -55,6 +55,7 @@ Set that interface to negotiate a DHCP lease with
 .Pp
 Enter the details of the Wi-Fi network:
 .Bd -literal -offset 2n
+.Ic # cd /etc/
 .Ic # wpa_passphrase \(dqmyssid\(dq \(dqmypassphrase\(dq >> wpa_supplicant.conf
 .Ed
 .Pp
@@ -91,3 +92,8 @@ will need to be escaped for
 commonly using
 .Ql \e ,
 see the manual page for your shell for more details.
+.Pp
+Note that
+.Ql service netif stop
+stops all networking, including internal networking such as VNC to local
+.Xr bhyve 8 .
