@@ -1,3 +1,6 @@
+.\"
+.\" SPDX-License-Identifier: BSD-4-Clause
+.\"
 .\"	$NetBSD: mailer.conf.5,v 1.2 1999/05/29 18:18:30 christos Exp $
 .\"
 .\" Copyright (c) 1998
@@ -29,13 +32,12 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd December 26, 2017
+.Dd January 24, 2025
 .Dt MAILER.CONF 5
 .Os
 .Sh NAME
 .Nm mailer.conf
-.Nd configuration file for
-.Xr mailwrapper 8
+.Nd mailwrapper configuration file
 .Sh DESCRIPTION
 The file
 .Pa /etc/mail/mailer.conf
@@ -81,8 +83,13 @@ The file may also contain comment lines, denoted by a
 .Ql #
 mark in the first column of any line.
 .Sh FILES
-.Bl -tag -width Pa
+.Bl -tag -width "/usr/local/etc/mail/mailer.conf" -compact
 .It Pa /etc/mail/mailer.conf
+.Xr mailwrapper 8
+configuration file
+.It Pa /usr/local/etc/mail/mailer.conf
+.Xr mailwrapper 8
+override configuration
 .El
 .Sh EXAMPLES
 This example shows how to set up
