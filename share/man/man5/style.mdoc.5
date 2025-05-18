@@ -34,6 +34,14 @@
 This file specifies the preferred style for manual pages in the
 .Fx
 source tree.
+.Ss Maintainability
+Consider our most stable base tooling when writing manuals.
+Keep semantics together so that they are discoverable with
+.Xr grep 1 .
+Where possible, please wrap
+.Xr roff 7
+lines at 72 characters so that they do not become unfriendly to people 
+using line numbering on long-established default console geometries.
 .Ss Code Examples
 .Bl -dash -width ""
 .It
